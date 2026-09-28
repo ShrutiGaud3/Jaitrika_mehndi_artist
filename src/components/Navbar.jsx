@@ -41,8 +41,8 @@ export const Navbar = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? 'bg-cream-ivory/95 backdrop-blur-md shadow-md border-b border-gold/30 py-3.5'
-          : 'bg-gradient-to-b from-mehndi-darkest/70 via-mehndi-darkest/30 to-transparent py-5'
+          ? 'bg-mehndi-darkest/95 backdrop-blur-md shadow-xl border-b border-gold/30 py-3 sm:py-3.5'
+          : 'bg-gradient-to-b from-mehndi-darkest/90 via-mehndi-darkest/50 to-transparent py-3.5 sm:py-5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
@@ -50,9 +50,9 @@ export const Navbar = () => {
         {/* Brand Logo */}
         <a 
           href="#home" 
-          className="group flex items-center gap-3 focus:outline-none"
+          className="group flex items-center gap-2.5 sm:gap-3 focus:outline-none"
         >
-          <div className="relative flex items-center justify-center w-11 h-11 sm:w-12 sm:h-12 rounded-full overflow-hidden border-2 border-gold/60 shadow-md group-hover:scale-105 transition-transform bg-[#FDF8EE] flex-shrink-0">
+          <div className="relative flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden border-2 border-gold/60 shadow-md group-hover:scale-105 transition-transform bg-[#FDF8EE] flex-shrink-0">
             <img 
               src={siteConfig.brand.logo || "/upload/logo.jpg"} 
               alt={siteConfig.brand.name}
@@ -60,14 +60,10 @@ export const Navbar = () => {
             />
           </div>
           <div className="flex flex-col">
-            <span className={`font-serif tracking-[0.16em] text-base sm:text-lg font-bold uppercase transition-colors ${
-              isScrolled ? 'text-mehndi-forest' : 'text-cream'
-            }`}>
+            <span className="font-serif tracking-[0.14em] text-sm sm:text-base md:text-lg font-bold uppercase text-cream transition-colors leading-tight">
               JAITRIKA MEHNDI ARTIST
             </span>
-            <span className={`text-[8.5px] sm:text-[9.5px] tracking-[0.2em] uppercase font-semibold transition-colors ${
-              isScrolled ? 'text-gold-deep' : 'text-gold-light'
-            }`}>
+            <span className="text-[7.5px] sm:text-[9px] tracking-[0.18em] uppercase font-medium text-gold-light transition-colors mt-0.5">
               {siteConfig.brand.tagline}
             </span>
           </div>
@@ -82,13 +78,9 @@ export const Navbar = () => {
                 key={item.label}
                 href={item.href}
                 className={`relative px-4 py-2 text-xs xl:text-sm uppercase tracking-widest font-medium transition-all duration-300 rounded-full ${
-                  isScrolled
-                    ? isActive
-                      ? 'text-mehndi-deep font-semibold bg-gold/15'
-                      : 'text-charcoal-light hover:text-mehndi-deep hover:bg-gold/10'
-                    : isActive
-                      ? 'text-cream font-semibold bg-white/15 backdrop-blur-xs'
-                      : 'text-cream/90 hover:text-white hover:bg-white/10'
+                  isActive
+                    ? 'text-gold-light font-bold bg-white/10 backdrop-blur-xs border border-gold/30 shadow-sm'
+                    : 'text-cream/85 hover:text-gold-light hover:bg-white/5'
                 }`}
               >
                 {item.label}
@@ -100,25 +92,21 @@ export const Navbar = () => {
           })}
         </nav>
 
-      {/* Mobile Hamburger Button */}
+        {/* Mobile Hamburger Button */}
         <div className="flex lg:hidden items-center gap-2">
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
-            className={`p-2.5 rounded-lg border transition-all duration-200 cursor-pointer ${
-              mobileMenuOpen || isScrolled
-                ? 'border-gold/50 text-mehndi-forest bg-gold/20 shadow-sm' 
-                : 'border-gold/40 text-cream bg-black/40 backdrop-blur-sm hover:bg-black/60'
-            }`}
+            className="p-2 sm:p-2.5 rounded-lg border border-gold/50 text-gold bg-mehndi-forest/80 backdrop-blur-md shadow-md hover:bg-gold/20 active:scale-95 transition-all duration-200 cursor-pointer"
           >
-            {mobileMenuOpen ? <X className="w-6 h-6 text-gold-deep" /> : <Menu className="w-6 h-6 text-gold" />}
+            {mobileMenuOpen ? <X className="w-5 h-5 text-gold-light" /> : <Menu className="w-5 h-5 text-gold" />}
           </button>
         </div>
       </div>
 
       {/* Mobile Drawer Menu (Solid, High-Contrast & Clear) */}
       {mobileMenuOpen && (
-        <div className="lg:hidden absolute top-full left-0 right-0 bg-[#1A0C08] border-b-2 border-gold/40 shadow-2xl px-5 py-5 transition-all duration-300">
+        <div className="lg:hidden absolute top-full left-0 right-0 bg-mehndi-darkest/98 border-b-2 border-gold/40 shadow-2xl px-5 py-5 backdrop-blur-xl transition-all duration-300">
           <div className="flex flex-col space-y-1.5">
             {siteConfig.navLinks.map((item) => {
               const isActive = activeSection === item.href.substring(1);
@@ -127,7 +115,7 @@ export const Navbar = () => {
                   key={item.label}
                   href={item.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`flex items-center justify-between text-sm uppercase tracking-[0.18em] py-3.5 px-4 rounded-lg font-bold transition-all duration-200 ${
+                  className={`flex items-center justify-between text-xs sm:text-sm uppercase tracking-[0.16em] py-3.5 px-4 rounded-lg font-bold transition-all duration-200 ${
                     isActive
                       ? 'bg-gold/25 text-gold-light border border-gold/50 shadow-sm'
                       : 'text-[#FFF8EE] hover:bg-white/10 hover:text-gold border border-transparent'

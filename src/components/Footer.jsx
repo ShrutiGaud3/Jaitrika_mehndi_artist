@@ -149,23 +149,23 @@ export const Footer = () => {
         <div className="md:hidden space-y-2.5 mb-8 border-t border-gold/20 pt-4">
           
           {/* Accordion 1: Quick Navigation */}
-          <div className="border border-gold/30 rounded-xl overflow-hidden bg-mehndi-forest/30">
+          <div className="border border-gold/30 rounded-xl overflow-hidden bg-mehndi-forest/40 backdrop-blur-sm">
             <button
               onClick={() => toggleSection('nav')}
-              className="w-full flex items-center justify-between p-4 text-left text-xs uppercase tracking-widest font-serif font-semibold text-gold"
+              className="w-full flex items-center justify-between p-3.5 text-left text-xs uppercase tracking-widest font-serif font-semibold text-gold hover:bg-gold/10 transition-colors"
             >
               <span>Quick Navigation</span>
               <ChevronDown className={`w-4 h-4 text-gold transition-transform duration-300 ${openSection === 'nav' ? 'rotate-180' : ''}`} />
             </button>
             
             {openSection === 'nav' && (
-              <div className="px-4 pb-4 pt-1 border-t border-gold/15 animate-fadeIn">
-                <ul className="space-y-2.5 text-xs text-cream/80">
+              <div className="px-4 pb-4 pt-1.5 border-t border-gold/15 bg-mehndi-darkest/70 animate-fadeIn">
+                <ul className="space-y-2 text-xs text-cream/80">
                   {siteConfig.navLinks.map((link) => (
                     <li key={link.label}>
                       <a
                         href={link.href}
-                        className="hover:text-gold-light transition-colors inline-flex items-center gap-1.5 py-1"
+                        className="hover:text-gold-light transition-colors inline-flex items-center gap-1.5 py-0.5"
                       >
                         <span className="text-gold text-[10px]">✦</span>
                         <span>{link.label}</span>
@@ -178,23 +178,23 @@ export const Footer = () => {
           </div>
 
           {/* Accordion 2: Mehndi Services */}
-          <div className="border border-gold/30 rounded-xl overflow-hidden bg-mehndi-forest/30">
+          <div className="border border-gold/30 rounded-xl overflow-hidden bg-mehndi-forest/40 backdrop-blur-sm">
             <button
               onClick={() => toggleSection('services')}
-              className="w-full flex items-center justify-between p-4 text-left text-xs uppercase tracking-widest font-serif font-semibold text-gold"
+              className="w-full flex items-center justify-between p-3.5 text-left text-xs uppercase tracking-widest font-serif font-semibold text-gold hover:bg-gold/10 transition-colors"
             >
               <span>Mehndi Services</span>
               <ChevronDown className={`w-4 h-4 text-gold transition-transform duration-300 ${openSection === 'services' ? 'rotate-180' : ''}`} />
             </button>
             
             {openSection === 'services' && (
-              <div className="px-4 pb-4 pt-1 border-t border-gold/15 animate-fadeIn">
-                <ul className="space-y-2.5 text-xs text-cream/80">
+              <div className="px-4 pb-4 pt-1.5 border-t border-gold/15 bg-mehndi-darkest/70 animate-fadeIn">
+                <ul className="space-y-2 text-xs text-cream/80">
                   {siteConfig.services.map((srv) => (
                     <li key={srv.id}>
                       <a
                         href="#services"
-                        className="hover:text-gold-light transition-colors inline-flex items-center gap-1.5 py-1"
+                        className="hover:text-gold-light transition-colors inline-flex items-center gap-1.5 py-0.5"
                       >
                         <span className="text-gold text-[10px]">✦</span>
                         <span>{srv.title}</span>
@@ -207,29 +207,29 @@ export const Footer = () => {
           </div>
 
           {/* Accordion 3: Direct Contact */}
-          <div className="border border-gold/30 rounded-xl overflow-hidden bg-mehndi-forest/30">
+          <div className="border border-gold/30 rounded-xl overflow-hidden bg-mehndi-forest/40 backdrop-blur-sm">
             <button
               onClick={() => toggleSection('contact')}
-              className="w-full flex items-center justify-between p-4 text-left text-xs uppercase tracking-widest font-serif font-semibold text-gold"
+              className="w-full flex items-center justify-between p-3.5 text-left text-xs uppercase tracking-widest font-serif font-semibold text-gold hover:bg-gold/10 transition-colors"
             >
               <span>Direct Contact</span>
               <ChevronDown className={`w-4 h-4 text-gold transition-transform duration-300 ${openSection === 'contact' ? 'rotate-180' : ''}`} />
             </button>
             
             {openSection === 'contact' && (
-              <div className="px-4 pb-4 pt-1 border-t border-gold/15 animate-fadeIn space-y-2.5 text-xs text-cream/80">
+              <div className="px-4 pb-4 pt-2 border-t border-gold/15 bg-mehndi-darkest/70 animate-fadeIn space-y-2.5 text-xs text-cream/80">
                 <p className="leading-relaxed">
-                  <strong className="text-cream block">WhatsApp & Calling:</strong>
+                  <strong className="text-cream block font-medium">WhatsApp & Calling:</strong>
                   <a href={`tel:${siteConfig.contact.phoneNumber}`} className="text-gold-light hover:underline font-mono">
                     {siteConfig.contact.displayWhatsapp}
                   </a>
                 </p>
                 <p className="leading-relaxed">
-                  <strong className="text-cream block">Location & Service:</strong>
+                  <strong className="text-cream block font-medium">Location & Service:</strong>
                   <span>{siteConfig.contact.location}</span>
                 </p>
                 <p className="leading-relaxed">
-                  <strong className="text-cream block">Natural Quality:</strong>
+                  <strong className="text-cream block font-medium">Natural Quality:</strong>
                   <span className="text-gold-light">100% Herbal Sojat Henna</span>
                 </p>
               </div>
@@ -242,20 +242,21 @@ export const Footer = () => {
         <HennaLeafDivider className="my-6 sm:my-8 text-gold" />
 
         {/* Bottom Bar: Copyright and Scroll to top */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-cream/60 text-center sm:text-left">
-          <p>
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-cream/70 text-center sm:text-left">
+          
+          <p className="order-2 sm:order-1 text-[11px] sm:text-xs leading-relaxed max-w-sm sm:max-w-none">
             © {new Date().getFullYear()} {siteConfig.brand.name}. All Rights Reserved. Handcrafted for Royal Celebrations.
           </p>
 
-          <div className="flex items-center gap-4">
-            <span className="flex items-center gap-1">
-              Crafted with <Heart className="w-3 h-3 text-red-400 fill-red-400" /> for Brides in Indore, Madhya Pradesh
+          <div className="order-1 sm:order-2 flex items-center justify-between sm:justify-end gap-3 w-full sm:w-auto">
+            <span className="inline-flex items-center gap-1.5 text-[11px] sm:text-xs text-cream/80 text-left sm:text-right">
+              Crafted with <Heart className="w-3.5 h-3.5 text-red-400 fill-red-400 flex-shrink-0" /> for Brides in Indore
             </span>
 
             <button
               onClick={scrollToTop}
               aria-label="Scroll to top"
-              className="p-2 rounded-full bg-mehndi-forest hover:bg-gold/20 text-gold border border-gold/40 transition-colors"
+              className="p-2.5 rounded-full bg-mehndi-forest hover:bg-gold/20 text-gold border border-gold/40 transition-transform active:scale-95 flex-shrink-0 shadow-md"
             >
               <ArrowUp className="w-4 h-4" />
             </button>
