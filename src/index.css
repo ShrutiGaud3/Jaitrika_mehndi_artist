@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-maroon-darkest: #220609;
+    --color-maroon-deep: #3D0D14;
+    --color-maroon-rich: #5C141E;
+    --color-maroon-accent: #8B2635;
+    --color-cream: #FFF9F2;
+    --color-ivory: #FCF5EC;
+    --color-gold: #D4AF37;
+    --color-gold-rich: #E5C378;
+    --color-dark-text: #241819;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Outfit', 'Inter', system-ui, sans-serif;
+    background-color: var(--color-cream);
+    color: var(--color-dark-text);
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #FCF5EC;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #5C141E;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3D0D14;
+  }
+}
+
+/* Subtle Shimmer and Golden glow effects */
+@keyframes goldPulse {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4), 0 0 30px rgba(212, 175, 55, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.7), 0 0 50px rgba(212, 175, 55, 0.35);
+  }
+}
+
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes kenBurnsEffect {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+.animate-gold-pulse {
+  animation: goldPulse 3s infinite ease-in-out;
+}
+
+.animate-float-gentle {
+  animation: floatGentle 4s infinite ease-in-out;
+}
+
+.animate-ken-burns {
+  animation: kenBurnsEffect 12s infinite alternate ease-in-out;
+}
+
+/* Ornamental gold divider */
+.ornament-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.ornament-divider::before,
+.ornament-divider::after {
+  content: '';
+  height: 1px;
+  width: 60px;
+  background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+}
+
+/* Luxury card gold border highlight */
+.gold-card-border {
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gold-card-border:hover {
+  border-color: rgba(212, 175, 55, 0.8);
+  box-shadow: 0 14px 35px -10px rgba(92, 20, 30, 0.18), 0 0 22px rgba(212, 175, 55, 0.25);
+}
+
+/* Indian arch clip path */
+.royal-arch-top {
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
