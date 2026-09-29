@@ -11,9 +11,9 @@ export const siteConfig = {
     tagline: "Beauty in Tradition, Art in Every Detail",
     logo: "/upload/logo.jpg",
     subTagline: "Exquisite bridal and designer mehndi crafted with passion, precision and timeless Indian artistry.",
-    experienceYears: "3+",
+    experienceYears: "8+",
     bridesAdorned: "1,500+",
-    cityCovered: "Vijay Nagar, Indore, Madhya Pradesh",
+    cityCovered: "Indore, Madhya Pradesh",
     naturalHenna: "100% Organic and Chemical-Free",
   },
 
@@ -25,10 +25,10 @@ export const siteConfig = {
     displayPhone: "+91 92445 17200",
     instagramHandle: "@jaitrika_mehandi_designer",
     instagramUrl: "https://www.instagram.com/jaitrika_mehandi_designer?stkn=MXZkMDBpbnlyZGJnaw==",
-    location: "Vijay Nagar, Indore, Madhya Pradesh",
-    homeServiceCities: "Vijay Nagar, Indore, Madhya Pradesh",
+    location: "Indore, Madhya Pradesh",
+    homeServiceCities: "Indore, Madhya Pradesh",
     workingHours: "Mon - Sun: 9:00 AM - 9:00 PM IST",
-    defaultWhatsappMessage: "Hello Jaitrika Mehndi Artist! I would like to inquire about booking mehndi services in Vijay Nagar, Indore, Madhya Pradesh.",
+    defaultWhatsappMessage: "Hello Jaitrika Mehndi Artist! I would like to inquire about booking mehndi services in Indore, Madhya Pradesh.",
   },
 
   // Helper to generate dynamic WhatsApp links with custom message

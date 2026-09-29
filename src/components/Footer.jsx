@@ -45,7 +45,7 @@ export const Footer = () => {
           </div>
 
           <p className="font-sans text-cream/75 text-xs sm:text-sm leading-relaxed mb-5 max-w-xl">
-            Creating timeless mehndi art for beautiful celebrations. Exquisite bridal, Rajasthani, Arabic and customized designer henna services in Vijay Nagar, Indore.
+            Creating timeless mehndi art for beautiful celebrations. Exquisite bridal, Rajasthani, Arabic and customized designer henna services in Indore, Madhya Pradesh.
           </p>
 
           <div className="flex items-center gap-3">
