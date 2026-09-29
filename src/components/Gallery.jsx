@@ -43,6 +43,8 @@ export const Gallery = () => {
         return 'Arabic Mehandi';
       case 'minimal':
         return 'Minimal Mehandi';
+      case 'baby_shower':
+        return 'Baby Shower Mehandi';
       default:
         return item.title || item.categoryLabel || 'Bridal Mehandi';
     }

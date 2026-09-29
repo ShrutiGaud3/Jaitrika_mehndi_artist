@@ -127,6 +127,10 @@ export const siteConfig = {
     "label": "Bridal Mehandi"
   },
   {
+    "id": "baby_shower",
+    "label": "Baby Shower"
+  },
+  {
     "id": "feet",
     "label": "Leg-Mehandi"
   },
@@ -165,14 +169,6 @@ export const siteConfig = {
     "image": "/upload/WhatsApp%20Image%202026-09-28%20at%202.56.59%20PM.jpeg",
     "rawFileName": "WhatsApp Image 2026-09-28 at 2.56.59 PM.jpeg",
     "description": "Bespoke Bridal Mehandi design crafted with 100% natural organic henna."
-  },
-  {
-    "id": 3,
-    "title": "Heavy Mehandi",
-    "category": "heavy",
-    "image": "/upload/WhatsApp%20Image%202026-09-28%20at%202.57.05%20PM%20(2).jpeg",
-    "rawFileName": "WhatsApp Image 2026-09-28 at 2.57.05 PM (2).jpeg",
-    "description": "Bespoke Heavy Mehandi design crafted with 100% natural organic henna."
   },
   {
     "id": 4,
@@ -263,28 +259,12 @@ export const siteConfig = {
     "description": "Bespoke Minimal Mehandi design crafted with 100% natural organic henna."
   },
   {
-    "id": 15,
-    "title": "Rajasthani Mehandi",
-    "category": "rajasthani",
-    "image": "/upload/WhatsApp%20Image%202026-09-28%20at%202.56.54%20PM%20(1).jpeg",
-    "rawFileName": "WhatsApp Image 2026-09-28 at 2.56.54 PM (1).jpeg",
-    "description": "Bespoke Rajasthani Mehandi design crafted with 100% natural organic henna."
-  },
-  {
     "id": 16,
     "title": "Heavy Mehandi",
     "category": "heavy",
     "image": "/upload/WhatsApp%20Image%202026-09-28%20at%202.56.54%20PM.jpeg",
     "rawFileName": "WhatsApp Image 2026-09-28 at 2.56.54 PM.jpeg",
     "description": "Bespoke Heavy Mehandi design crafted with 100% natural organic henna."
-  },
-  {
-    "id": 17,
-    "title": "Rajasthani Mehandi",
-    "category": "rajasthani",
-    "image": "/upload/WhatsApp%20Image%202026-09-28%20at%202.56.55%20PM.jpeg",
-    "rawFileName": "WhatsApp Image 2026-09-28 at 2.56.55 PM.jpeg",
-    "description": "Bespoke Rajasthani Mehandi design crafted with 100% natural organic henna."
   },
   {
     "id": 18,
@@ -420,14 +400,6 @@ export const siteConfig = {
     "category": "arabic",
     "image": "/upload/WhatsApp%20Image%202026-09-28%20at%202.57.05%20PM%20(1).jpeg",
     "rawFileName": "WhatsApp Image 2026-09-28 at 2.57.05 PM (1).jpeg",
-    "description": "Bespoke Arabic Mehandi design crafted with 100% natural organic henna."
-  },
-  {
-    "id": 35,
-    "title": "Arabic Mehandi",
-    "category": "arabic",
-    "image": "/upload/WhatsApp%20Image%202026-09-28%20at%202.57.05%20PM.jpeg",
-    "rawFileName": "WhatsApp Image 2026-09-28 at 2.57.05 PM.jpeg",
     "description": "Bespoke Arabic Mehandi design crafted with 100% natural organic henna."
   },
   {
@@ -733,6 +705,78 @@ export const siteConfig = {
     "image": "/upload/WhatsApp%20Image%202026-09-28%20at%202.57.27%20PM.jpeg",
     "rawFileName": "WhatsApp Image 2026-09-28 at 2.57.27 PM.jpeg",
     "description": "Bespoke Leg-Mehandi design crafted with 100% natural organic henna."
+  },
+  {
+    "id": 75,
+    "title": "Baby Shower Mehandi",
+    "category": "baby_shower",
+    "image": "/upload/WhatsApp%20Image%202026-09-29%20at%2011.50.36%20AM%20(1).jpeg",
+    "rawFileName": "WhatsApp Image 2026-09-29 at 11.50.36 AM (1).jpeg",
+    "description": "Bespoke Baby Shower Mehandi design crafted with 100% natural organic henna."
+  },
+  {
+    "id": 76,
+    "title": "Baby Shower Mehandi",
+    "category": "baby_shower",
+    "image": "/upload/WhatsApp%20Image%202026-09-29%20at%2011.50.36%20AM.jpeg",
+    "rawFileName": "WhatsApp Image 2026-09-29 at 11.50.36 AM.jpeg",
+    "description": "Bespoke Baby Shower Mehandi design crafted with 100% natural organic henna."
+  },
+  {
+    "id": 77,
+    "title": "Baby Shower Mehandi",
+    "category": "baby_shower",
+    "image": "/upload/WhatsApp%20Image%202026-09-29%20at%2011.50.37%20AM%20(1).jpeg",
+    "rawFileName": "WhatsApp Image 2026-09-29 at 11.50.37 AM (1).jpeg",
+    "description": "Bespoke Baby Shower Mehandi design crafted with 100% natural organic henna."
+  },
+  {
+    "id": 78,
+    "title": "Baby Shower Mehandi",
+    "category": "baby_shower",
+    "image": "/upload/WhatsApp%20Image%202026-09-29%20at%2011.50.37%20AM%20(2).jpeg",
+    "rawFileName": "WhatsApp Image 2026-09-29 at 11.50.37 AM (2).jpeg",
+    "description": "Bespoke Baby Shower Mehandi design crafted with 100% natural organic henna."
+  },
+  {
+    "id": 79,
+    "title": "Baby Shower Mehandi",
+    "category": "baby_shower",
+    "image": "/upload/WhatsApp%20Image%202026-09-29%20at%2011.50.37%20AM.jpeg",
+    "rawFileName": "WhatsApp Image 2026-09-29 at 11.50.37 AM.jpeg",
+    "description": "Bespoke Baby Shower Mehandi design crafted with 100% natural organic henna."
+  },
+  {
+    "id": 80,
+    "title": "Baby Shower Mehandi",
+    "category": "baby_shower",
+    "image": "/upload/WhatsApp%20Image%202026-09-29%20at%2011.50.38%20AM%20(1).jpeg",
+    "rawFileName": "WhatsApp Image 2026-09-29 at 11.50.38 AM (1).jpeg",
+    "description": "Bespoke Baby Shower Mehandi design crafted with 100% natural organic henna."
+  },
+  {
+    "id": 81,
+    "title": "Baby Shower Mehandi",
+    "category": "baby_shower",
+    "image": "/upload/WhatsApp%20Image%202026-09-29%20at%2011.50.38%20AM%20(2).jpeg",
+    "rawFileName": "WhatsApp Image 2026-09-29 at 11.50.38 AM (2).jpeg",
+    "description": "Bespoke Baby Shower Mehandi design crafted with 100% natural organic henna."
+  },
+  {
+    "id": 82,
+    "title": "Baby Shower Mehandi",
+    "category": "baby_shower",
+    "image": "/upload/WhatsApp%20Image%202026-09-29%20at%2011.50.38%20AM.jpeg",
+    "rawFileName": "WhatsApp Image 2026-09-29 at 11.50.38 AM.jpeg",
+    "description": "Bespoke Baby Shower Mehandi design crafted with 100% natural organic henna."
+  },
+  {
+    "id": 83,
+    "title": "Baby Shower Mehandi",
+    "category": "baby_shower",
+    "image": "/upload/WhatsApp%20Image%202026-09-29%20at%2011.50.39%20AM.jpeg",
+    "rawFileName": "WhatsApp Image 2026-09-29 at 11.50.39 AM.jpeg",
+    "description": "Bespoke Baby Shower Mehandi design crafted with 100% natural organic henna."
   }
 ],
 
