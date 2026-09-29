@@ -52,23 +52,23 @@ export const CTA = () => {
         </p>
 
         {/* Action Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 w-full max-w-xl">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 w-full max-w-2xl">
           <a
             href={siteConfig.getWhatsappUrl("Hello Jaitrika! I would like to check availability and package pricing for my upcoming bridal/wedding mehndi.")}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-gradient-to-r from-maroon-deep via-maroon-rich to-maroon-ruby hover:from-maroon-rich hover:to-maroon-deep text-cream font-semibold text-xs sm:text-sm uppercase tracking-widest shadow-lg hover:shadow-maroon-glow hover:scale-105 active:scale-95 transition-all duration-300 border border-gold/50 whitespace-nowrap"
+            className="w-full sm:w-auto min-w-[240px] inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-maroon-deep via-maroon-rich to-maroon-ruby hover:from-maroon-rich hover:to-maroon-deep text-cream font-semibold text-xs sm:text-sm uppercase tracking-widest shadow-lg hover:shadow-maroon-glow hover:scale-105 active:scale-95 transition-all duration-300 border border-gold/50"
           >
             <MessageCircle className="w-5 h-5 text-gold flex-shrink-0" />
-            <span>Chat on WhatsApp</span>
+            <span className="whitespace-nowrap">Chat on WhatsApp</span>
           </a>
 
           <a
             href="#gallery"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-white/10 hover:bg-white/20 text-cream backdrop-blur-md border border-gold/40 font-medium text-xs sm:text-sm uppercase tracking-widest hover:border-gold hover:scale-105 active:scale-95 transition-all duration-300 whitespace-nowrap"
+            className="w-full sm:w-auto min-w-[220px] inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-white/10 hover:bg-white/20 text-cream backdrop-blur-md border border-gold/40 font-medium text-xs sm:text-sm uppercase tracking-widest hover:border-gold hover:scale-105 active:scale-95 transition-all duration-300"
           >
             <Eye className="w-4 h-4 text-gold flex-shrink-0" />
-            <span>View Gallery</span>
+            <span className="whitespace-nowrap">View Gallery</span>
           </a>
         </div>
 

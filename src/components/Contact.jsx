@@ -115,18 +115,18 @@ export const Contact = () => {
         </div>
 
         {/* Quick Operational Info Bar */}
-        <div className="mt-14 max-w-5xl mx-auto p-5 sm:p-7 rounded-2xl bg-gold/10 border border-gold/30 flex flex-col lg:flex-row items-center justify-between gap-5 text-center lg:text-left">
-          <div className="flex items-center gap-3.5 text-left">
-            <div className="w-10 h-10 rounded-full bg-gold/15 flex items-center justify-center flex-shrink-0">
-              <Clock className="w-5 h-5 text-gold-deep" />
+        <div className="mt-14 max-w-5xl mx-auto p-5 sm:p-6 rounded-2xl bg-gold/10 border border-gold/30 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="flex items-center gap-4 text-left w-full md:w-auto">
+            <div className="w-11 h-11 rounded-full bg-gold/20 flex items-center justify-center flex-shrink-0 text-gold-deep border border-gold/40">
+              <Clock className="w-5 h-5" />
             </div>
             <div>
               <span className="text-xs uppercase font-bold tracking-wider text-mehndi-forest block">
                 Booking Hours & Response Time
               </span>
-              <span className="text-xs sm:text-sm text-charcoal-light">
-                {siteConfig.contact.workingHours} • Typical WhatsApp response in &lt; 15 mins
-              </span>
+              <p className="text-xs sm:text-sm text-charcoal-light mt-0.5">
+                {siteConfig.contact.workingHours} • WhatsApp response within 15 mins
+              </p>
             </div>
           </div>
 
@@ -134,7 +134,7 @@ export const Contact = () => {
             href={siteConfig.contact.instagramUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-gold/15 hover:bg-gold/25 border border-gold/40 text-xs font-bold uppercase tracking-wider text-mehndi-forest hover:text-henna-terracotta transition-all whitespace-nowrap flex-shrink-0"
+            className="w-full md:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3 rounded-full bg-gold/15 hover:bg-gold/25 border border-gold/40 text-xs font-bold uppercase tracking-wider text-mehndi-forest hover:text-henna-terracotta transition-all shadow-sm whitespace-nowrap flex-shrink-0"
           >
             <Instagram className="w-4 h-4 text-henna-terracotta flex-shrink-0" />
             <span>Follow {siteConfig.contact.instagramHandle}</span>

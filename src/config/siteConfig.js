@@ -733,14 +733,6 @@ export const siteConfig = {
     "image": "/upload/WhatsApp%20Image%202026-09-28%20at%202.57.27%20PM.jpeg",
     "rawFileName": "WhatsApp Image 2026-09-28 at 2.57.27 PM.jpeg",
     "description": "Bespoke Leg-Mehandi design crafted with 100% natural organic henna."
-  },
-  {
-    "id": 74,
-    "title": "Bridal Mehandi",
-    "category": "bridal",
-    "image": "/upload/WhatsApp%20Image%202026-09-28%20at%205.35.56%20PM.jpeg",
-    "rawFileName": "WhatsApp Image 2026-09-28 at 5.35.56 PM.jpeg",
-    "description": "Bespoke Bridal Mehandi design crafted with 100% natural organic henna."
   }
 ],
 
