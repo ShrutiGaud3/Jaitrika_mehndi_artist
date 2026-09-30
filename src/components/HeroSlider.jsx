@@ -110,7 +110,7 @@ export const HeroSlider = () => {
           </div>
           <div className="flex flex-col items-center">
             <span className="font-serif text-2xl sm:text-3xl text-gold font-bold">{siteConfig.brand.bridesAdorned}</span>
-            <span className="text-[11px] sm:text-xs text-cream/80 uppercase tracking-wider">Happy Brides</span>
+            <span className="text-[11px] sm:text-xs text-cream/80 uppercase tracking-wider">Happy Clients</span>
           </div>
           <div className="flex flex-col items-center">
             <span className="font-serif text-2xl sm:text-3xl text-gold font-bold">100%</span>

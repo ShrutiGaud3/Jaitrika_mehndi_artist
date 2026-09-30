@@ -250,7 +250,7 @@ export const Footer = () => {
 
           <div className="order-1 sm:order-2 flex items-center justify-between sm:justify-end gap-3 w-full sm:w-auto">
             <span className="inline-flex items-center gap-1.5 text-[11px] sm:text-xs text-cream/80 text-left sm:text-right">
-              Crafted with <Heart className="w-3.5 h-3.5 text-red-400 fill-red-400 flex-shrink-0" /> for Brides in Indore
+              Crafted with <Heart className="w-3.5 h-3.5 text-red-400 fill-red-400 flex-shrink-0" /> for Clients in Indore
             </span>
 
             <button
